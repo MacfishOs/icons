@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <filter id="ac-base-shadow" x="-15%" y="-10%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#160228" flood-opacity="0.30" />
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#160228" flood-opacity="0.15" />
+    </filter>
+    <filter id="ac-elem-shadow" x="-20%" y="-20%" width="140%" height="145%">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#0E011A" flood-opacity="0.35" />
+    </filter>
+
+    <linearGradient id="ac-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9C27B0" />
+      <stop offset="50%" stop-color="#673AB7" />
+      <stop offset="100%" stop-color="#3F51B5" />
+    </linearGradient>
+
+    <linearGradient id="ac-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD54F" /><stop offset="100%" stop-color="#FF6F00" />
+    </linearGradient>
+  </defs>
+
+  <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="url(#ac-bg)" filter="url(#ac-base-shadow)" />
+
+  <g transform="translate(256, 256) scale(0.82) translate(-256, -256)" filter="url(#ac-elem-shadow)">
+    <!-- Photo Frame Card -->
+    <rect x="116" y="108" width="280" height="252" rx="32" fill="#FFFFFF" stroke="#E1BEE7" stroke-width="2" />
+    <!-- Sun/Moon -->
+    <circle cx="180" cy="176" r="26" fill="url(#ac-gold)" />
+    <!-- Mountain Peaks -->
+    <polygon points="120,330 216,212 288,300 348,244 392,330" fill="#7E57C2" />
+    <polygon points="120,330 216,212 250,256 186,330" fill="#9575CD" />
+
+    <!-- Crawl/Download Arrow Badge -->
+    <g transform="translate(340, 320)" filter="url(#ac-elem-shadow)">
+      <circle cx="0" cy="0" r="42" fill="#FF4081" stroke="#FFFFFF" stroke-width="3" />
+      <path d="M 0 -18 V 14 M -12 2 L 0 14 L 12 2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+  </g>
+
+  <!-- Outer Squircle Rim Highlight -->
+  <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="3" />
+</svg>

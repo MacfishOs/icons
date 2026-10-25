@@ -44,6 +44,9 @@
   <!-- Charcoal Squircle Base Tile -->
   <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="url(#cl-bg)" stroke="url(#cl-border)" stroke-width="3" filter="url(#cl-shadow-base)" />
 
+  <!-- Calibrated Glyph Group (Scale 0.88) -->
+  <g transform="translate(256, 256) scale(0.88) translate(-256, -256)">
+
   <!-- Top Specular Reflection Overlay -->
   <rect x="18" y="18" width="476" height="230" rx="108" ry="108" fill="url(#cl-highlight)" opacity="0.7" />
 
@@ -64,5 +67,6 @@
     <!-- 4. Bottom-Right: Equals (=) -->
     <rect x="270" y="270" width="148" height="148" rx="44" fill="url(#cl-amber)" stroke="#FFE0B2" stroke-opacity="0.7" stroke-width="2.5" />
     <path d="M 312 328 H 376 M 312 360 H 376" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" />
+  </g>
   </g>
 </svg>

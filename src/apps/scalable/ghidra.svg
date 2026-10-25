@@ -42,6 +42,9 @@
   <!-- macOS Squircle Base -->
   <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="url(#gh-bg)" stroke="url(#gh-border)" stroke-width="3" filter="url(#gh-base-shadow)" />
 
+  <!-- Calibrated Glyph Group (Scale 0.78) -->
+  <g transform="translate(256, 256) scale(0.78) translate(-256, -256)">
+
   <!-- Subtle Disassembly Radar Ring -->
   <circle cx="256" cy="256" r="154" fill="none" stroke="url(#gh-cyber-ring)" stroke-width="2.5" stroke-dasharray="18 10 4 10" />
 
@@ -67,5 +70,6 @@
 
     <!-- Glowing Cyber-Cyan Dragon Eye -->
     <polygon points="282,162 308,156 296,174" fill="#00F5FF" />
+  </g>
   </g>
 </svg>

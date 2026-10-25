@@ -30,7 +30,7 @@
     </linearGradient>
   </defs>
   <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="url(#ch-bg)" stroke="url(#ch-border)" stroke-width="3" filter="url(#ch-base-shadow)" />
-  <g transform="translate(256, 256) scale(1.12) translate(-256, -256)" filter="url(#ch-ring-shadow)">
+  <g transform="translate(256, 256) scale(0.8) translate(-256, -256)" filter="url(#ch-ring-shadow)">
     <g clip-path="url(#ch-circle-clip)">
       <path d="M 100 100 L 100 412 L 256 412 L 324 190 Z" fill="url(#ch-green)" />
       <path d="M 256 190 L 412 190 L 412 412 L 188 412 Z" fill="url(#ch-yellow)" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="3" />

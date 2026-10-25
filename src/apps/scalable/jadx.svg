@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <filter id="jx-base-shadow" x="-15%" y="-10%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#02140A" flood-opacity="0.30" />
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#02140A" flood-opacity="0.15" />
+    </filter>
+    <filter id="jx-elem-shadow" x="-20%" y="-20%" width="140%" height="145%">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#010A05" flood-opacity="0.38" />
+    </filter>
+
+    <linearGradient id="jx-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#143D24" />
+      <stop offset="50%" stop-color="#0B2415" />
+      <stop offset="100%" stop-color="#04120A" />
+    </linearGradient>
+
+    <linearGradient id="jx-green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4DF78B" />
+      <stop offset="50%" stop-color="#3DDC84" />
+      <stop offset="100%" stop-color="#159952" />
+    </linearGradient>
+  </defs>
+
+  <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="url(#jx-bg)" filter="url(#jx-base-shadow)" />
+
+  <g transform="translate(256, 256) scale(0.85) translate(-256, -256)" filter="url(#jx-elem-shadow)">
+    <!-- Android Dome Head -->
+    <path d="M 148 244 A 108 108 0 0 1 364 244 Z" fill="url(#jx-green)" stroke="#B5FFD4" stroke-opacity="0.6" stroke-width="2" />
+    <!-- Antennae -->
+    <line x1="196" y1="168" x2="174" y2="132" stroke="url(#jx-green)" stroke-width="14" stroke-linecap="round" />
+    <line x1="316" y1="168" x2="338" y2="132" stroke="url(#jx-green)" stroke-width="14" stroke-linecap="round" />
+    <!-- Eyes -->
+    <circle cx="208" cy="204" r="10" fill="#04120A" />
+    <circle cx="304" cy="204" r="10" fill="#04120A" />
+
+    <!-- Curly Code Decompiler Brackets { ; } -->
+    <text x="256" y="368" font-family="monospace, monospace" font-size="96" font-weight="900" fill="#00F5D4" text-anchor="middle">{ ; }</text>
+  </g>
+
+  <!-- Outer Squircle Rim Highlight -->
+  <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="3" />
+</svg>

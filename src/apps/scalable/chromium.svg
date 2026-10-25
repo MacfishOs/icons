@@ -53,7 +53,7 @@
   <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="url(#cr-bg)" stroke="url(#cr-border)" stroke-width="3" filter="url(#cr-base-shadow)" />
 
   <!-- Chromium 3-Blade Translucent Aperture -->
-  <g transform="translate(256, 256) scale(1.12) translate(-256, -256)" filter="url(#cr-ring-shadow)">
+  <g transform="translate(256, 256) scale(0.8) translate(-256, -256)" filter="url(#cr-ring-shadow)">
     <g clip-path="url(#cr-circle-clip)">
       <!-- Bottom-Left Cerulean Segment -->
       <path d="M 100 100 L 100 412 L 256 412 L 324 190 Z" fill="url(#cr-left-azure)" />

@@ -40,7 +40,7 @@
   <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="url(#vs-bg)" stroke="url(#vs-border)" stroke-width="3" filter="url(#vs-base-shadow)" />
 
   <!-- Inner Artwork Scaled & Centered to Fill Dock Slot -->
-  <g transform="translate(256, 256) scale(1.132075) translate(-256, -256)">
+  <g transform="translate(256, 256) scale(0.95) translate(-256, -256)">
     <g filter="url(#vs-ribbon-shadow)">
       <path d="M 122 316 C 110 304, 110 286, 122 274 L 308 118 C 324 105, 348 114, 348 136 V 198 L 166 346 C 152 356, 134 328, 122 316 Z" fill="url(#vs-bottom-wing)" />
       <path d="M 122 196 C 110 208, 110 226, 122 238 L 308 394 C 324 407, 348 398, 348 376 V 314 L 166 166 C 152 156, 134 184, 122 196 Z" fill="url(#vs-top-wing)" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="2" />

@@ -40,10 +40,13 @@
     </linearGradient>
   </defs>
 
-  <!-- Full-Canvas Squircle Base (Matches VS Code 480x480 rx=110) -->
+  <!-- macOS Squircle Base -->
   <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="url(#ff-bg)" stroke="url(#ff-border)" stroke-width="3" filter="url(#ff-base-shadow)" />
 
-  <g transform="translate(256, 256) scale(1.12) translate(-256, -256)" filter="url(#ff-glow)">
+  <!-- Calibrated Glyph Group (Scale 0.95) -->
+  <g transform="translate(256, 256) scale(0.95) translate(-256, -256)">
+
+  <g filter="url(#ff-glow)">
     <!-- Deep Violet-Indigo Globe Core -->
     <circle cx="256" cy="262" r="108" fill="url(#ff-globe)" stroke="#D68FFF" stroke-opacity="0.5" stroke-width="2" />
 
@@ -67,5 +70,6 @@
              C 340 380, 262 406, 198 378
              C 256 382, 314 344, 328 286
              C 340 236, 316 184, 332 138 Z" fill="url(#ff-tail-inner)" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="1.5" />
+  </g>
   </g>
 </svg>

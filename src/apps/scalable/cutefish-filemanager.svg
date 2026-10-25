@@ -59,6 +59,9 @@
   <!-- Solid Light Blue Squircle Base -->
   <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="url(#fl-bg)" stroke="url(#fl-border)" stroke-width="3" filter="url(#fl-shadow-base)" />
 
+  <!-- Calibrated Glyph Group (Scale 0.82) -->
+  <g transform="translate(256, 256) scale(0.82) translate(-256, -256)">
+
   <!-- Specular Reflection Overlay -->
   <rect x="18" y="18" width="476" height="230" rx="108" ry="108" fill="url(#fl-highlight)" opacity="0.6" />
 
@@ -82,5 +85,6 @@
 
     <!-- Pocket Gloss Highlight Line -->
     <rect x="220" y="242" width="72" height="10" rx="5" fill="#FFFFFF" opacity="0.55" />
+  </g>
   </g>
 </svg>

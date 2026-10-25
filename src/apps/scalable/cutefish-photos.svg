@@ -95,6 +95,9 @@
   <!-- Solid Smooth Squircle Base with Soft Drop Shadow -->
   <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="url(#ph-bg)" stroke="url(#ph-border)" stroke-width="3" filter="url(#ph-shadow-base)" />
 
+  <!-- Calibrated Glyph Group (Scale 0.88) -->
+  <g transform="translate(256, 256) scale(0.88) translate(-256, -256)">
+
   <!-- Subtle Top Reflection Overlay -->
   <rect x="18" y="18" width="476" height="230" rx="108" ry="108" fill="url(#ph-highlight)" opacity="0.6" />
 
@@ -130,5 +133,6 @@
 
     <!-- Specular Highlight Spot -->
     <circle cx="-12" cy="-12" r="8" fill="#FFFFFF" opacity="0.85" />
+  </g>
   </g>
 </svg>

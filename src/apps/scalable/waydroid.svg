@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <filter id="wd-base-shadow" x="-15%" y="-10%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#02140A" flood-opacity="0.30" />
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#02140A" flood-opacity="0.15" />
+    </filter>
+    <filter id="wd-elem-shadow" x="-20%" y="-20%" width="140%" height="145%">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#00180A" flood-opacity="0.38" />
+    </filter>
+
+    <linearGradient id="wd-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#164A30" />
+      <stop offset="50%" stop-color="#0C301E" />
+      <stop offset="100%" stop-color="#04170E" />
+    </linearGradient>
+
+    <linearGradient id="wd-green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4DF78B" />
+      <stop offset="50%" stop-color="#3DDC84" />
+      <stop offset="100%" stop-color="#00B855" />
+    </linearGradient>
+
+    <linearGradient id="wd-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5D4" /><stop offset="100%" stop-color="#00B4D8" />
+    </linearGradient>
+  </defs>
+
+  <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="url(#wd-bg)" filter="url(#wd-base-shadow)" />
+
+  <g transform="translate(256, 256) scale(0.85) translate(-256, -256)" filter="url(#wd-elem-shadow)">
+    <!-- Wayland Outer Orbit Track -->
+    <ellipse cx="256" cy="256" rx="156" ry="76" transform="rotate(-30 256 256)" fill="none" stroke="url(#wd-cyan)" stroke-width="4" stroke-dasharray="14 10" />
+
+    <!-- Android Bot Dome Head -->
+    <path d="M 148 238 A 108 108 0 0 1 364 238 Z" fill="url(#wd-green)" stroke="#B5FFD4" stroke-width="2.5" />
+    <!-- Antennae -->
+    <line x1="196" y1="162" x2="174" y2="124" stroke="url(#wd-green)" stroke-width="14" stroke-linecap="round" />
+    <line x1="316" y1="162" x2="338" y2="124" stroke="url(#wd-green)" stroke-width="14" stroke-linecap="round" />
+    <!-- Eyes -->
+    <circle cx="208" cy="198" r="10" fill="#04170E" />
+    <circle cx="304" cy="198" r="10" fill="#04170E" />
+
+    <!-- Wayland "W" Monogram Base Ribbon -->
+    <path d="M 160 268 L 204 360 L 256 290 L 308 360 L 352 268" fill="none" stroke="url(#wd-cyan)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Outer Squircle Rim Highlight -->
+  <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="3" />
+</svg>

@@ -53,7 +53,7 @@
   </g>
 
   <!-- Scaled Binder Rings & Typography -->
-  <g transform="translate(256, 256) scale(1.12) translate(-256, -256)">
+  <g transform="translate(256, 256) scale(0.85) translate(-256, -256)">
     <circle cx="164" cy="186" r="16" fill="#B8253A" opacity="0.45" />
     <rect x="152" y="142" width="24" height="54" rx="12" fill="url(#cal-ring)" stroke="#FFFFFF" stroke-width="1.5" filter="url(#cal-elem-shadow)" />
 

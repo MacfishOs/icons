@@ -42,6 +42,9 @@
   <!-- macOS Squircle Base -->
   <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="url(#vp-bg)" stroke="url(#vp-border)" stroke-width="3" filter="url(#vp-base-shadow)" />
 
+  <!-- Calibrated Glyph Group (Scale 0.88) -->
+  <g transform="translate(256, 256) scale(0.88) translate(-256, -256)">
+
   <g filter="url(#vp-card-shadow)">
     <!-- Back Tilted Translucent Coral-Pink Frame -->
     <rect x="116" y="136" width="280" height="220" rx="52" transform="rotate(-10 256 246)" fill="url(#vp-card-back)" stroke="#FFD1E0" stroke-opacity="0.55" stroke-width="2" />
@@ -61,5 +64,6 @@
     <!-- Subtle Bottom Progress Pill -->
     <rect x="176" y="336" width="160" height="8" rx="4" fill="#FFFFFF" opacity="0.4" />
     <rect x="176" y="336" width="92" height="8" rx="4" fill="#FFFFFF" opacity="0.9" />
+  </g>
   </g>
 </svg>

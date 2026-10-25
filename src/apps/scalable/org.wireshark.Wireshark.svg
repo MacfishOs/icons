@@ -55,7 +55,7 @@
   <!-- 2. Strictly Clipped Interior (Unscaled Clip Group so corners never bleed) -->
   <g clip-path="url(#ws-squircle-clip)">
     <!-- Scaled Center Elements (Radar & Shark Fin) -->
-    <g transform="translate(256, 252) scale(1.14) translate(-256, -252)">
+    <g transform="translate(256, 252) scale(0.95) translate(-256, -252)">
       <!-- Packet Capture Sonar Rings -->
       <circle cx="256" cy="236" r="168" fill="none" stroke="#4DD2FF" stroke-opacity="0.16" stroke-width="2" stroke-dasharray="12 8" />
       <circle cx="256" cy="236" r="122" fill="none" stroke="#4DD2FF" stroke-opacity="0.24" stroke-width="2" />

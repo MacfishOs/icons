@@ -39,7 +39,7 @@
   <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="url(#sm-bg)" stroke="url(#sm-border)" stroke-width="3" filter="url(#sm-base-shadow)" />
 
   <!-- Inner Artwork Scaled & Centered to Fill Dock Slot -->
-  <g transform="translate(256, 256) scale(1.132075) translate(-256, -256)">
+  <g transform="translate(256, 256) scale(0.86) translate(-256, -256)">
     <g clip-path="url(#sm-screen-clip)">
       <rect x="84" y="84" width="344" height="344" rx="64" fill="#0B1316" opacity="0.6" />
       <g stroke="#00FFAA" stroke-opacity="0.10" stroke-width="1.5">

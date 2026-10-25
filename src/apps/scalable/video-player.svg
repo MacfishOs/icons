@@ -19,17 +19,20 @@
       <stop offset="100%" stop-color="#140C26" stop-opacity="0.9" />
     </linearGradient>
 
+    <!-- Back Tilted Petal Card (Warm Magenta-Coral) -->
     <linearGradient id="vp-card-back" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FF477E" stop-opacity="0.88" />
       <stop offset="100%" stop-color="#FF8533" stop-opacity="0.82" />
     </linearGradient>
 
+    <!-- Front Glassmorphic Screen Card (Violet -> Cyan) -->
     <linearGradient id="vp-card-front" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#4CC9F0" stop-opacity="0.88" />
       <stop offset="50%" stop-color="#4361EE" stop-opacity="0.85" />
       <stop offset="100%" stop-color="#7209B7" stop-opacity="0.92" />
     </linearGradient>
 
+    <!-- 3D White Play Button -->
     <linearGradient id="vp-play" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FFFFFF" />
       <stop offset="100%" stop-color="#E0EAFF" />
@@ -39,20 +42,28 @@
   <!-- macOS Squircle Base -->
   <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="url(#vp-bg)" stroke="url(#vp-border)" stroke-width="3" filter="url(#vp-base-shadow)" />
 
-  <!-- Inner Artwork Scaled & Centered to Fill Dock Slot -->
-  <g transform="translate(256, 256) scale(1.132075) translate(-256, -256)">
-    <g filter="url(#vp-card-shadow)">
-      <rect x="116" y="136" width="280" height="220" rx="52" transform="rotate(-10 256 246)" fill="url(#vp-card-back)" stroke="#FFD1E0" stroke-opacity="0.55" stroke-width="2" />
-      <rect x="116" y="152" width="280" height="220" rx="52" fill="url(#vp-card-front)" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="2.5" />
-      <path d="M 230 220
-               C 230 210, 241 204, 250 210
-               L 306 246
-               C 314 251, 314 263, 306 268
-               L 250 304
-               C 241 310, 230 304, 230 294
-               Z" fill="url(#vp-play)" filter="url(#vp-card-shadow)" />
-      <rect x="176" y="336" width="160" height="8" rx="4" fill="#FFFFFF" opacity="0.4" />
-      <rect x="176" y="336" width="92" height="8" rx="4" fill="#FFFFFF" opacity="0.9" />
-    </g>
+  <!-- Calibrated Glyph Group (Scale 0.88) -->
+  <g transform="translate(256, 256) scale(0.88) translate(-256, -256)">
+
+  <g filter="url(#vp-card-shadow)">
+    <!-- Back Tilted Translucent Coral-Pink Frame -->
+    <rect x="116" y="136" width="280" height="220" rx="52" transform="rotate(-10 256 246)" fill="url(#vp-card-back)" stroke="#FFD1E0" stroke-opacity="0.55" stroke-width="2" />
+
+    <!-- Front Frosted Acrylic Cinema Frame -->
+    <rect x="116" y="152" width="280" height="220" rx="52" fill="url(#vp-card-front)" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="2.5" />
+
+    <!-- Center 3D Play Prism -->
+    <path d="M 230 220
+             C 230 210, 241 204, 250 210
+             L 306 246
+             C 314 251, 314 263, 306 268
+             L 250 304
+             C 241 310, 230 304, 230 294
+             Z" fill="url(#vp-play)" filter="url(#vp-card-shadow)" />
+
+    <!-- Subtle Bottom Progress Pill -->
+    <rect x="176" y="336" width="160" height="8" rx="4" fill="#FFFFFF" opacity="0.4" />
+    <rect x="176" y="336" width="92" height="8" rx="4" fill="#FFFFFF" opacity="0.9" />
+  </g>
   </g>
 </svg>

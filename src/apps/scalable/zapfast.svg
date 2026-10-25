@@ -40,6 +40,9 @@
   <!-- macOS Squircle Base -->
   <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="url(#zf-bg)" stroke="url(#zf-border)" stroke-width="3" filter="url(#zf-base-shadow)" />
 
+  <!-- Calibrated Glyph Group (Scale 0.88) -->
+  <g transform="translate(256, 256) scale(0.88) translate(-256, -256)">
+
   <!-- Frosted Speed Halo Ring -->
   <circle cx="256" cy="256" r="148" fill="url(#zf-ring)" stroke="#66F7FF" stroke-opacity="0.5" stroke-width="2.5" />
 
@@ -62,5 +65,6 @@
              L 164 270
              C 152 270, 145 256, 153 246
              L 278 102 Z" fill="url(#zf-bolt-top)" stroke="#FFFFFF" stroke-opacity="0.85" stroke-width="2.5" />
+  </g>
   </g>
 </svg>

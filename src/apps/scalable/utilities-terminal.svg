@@ -33,7 +33,7 @@
   <!-- Full-Canvas Squircle Base (480x480 rx=110) -->
   <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="url(#tm-bg)" stroke="url(#tm-border)" stroke-width="3" filter="url(#tm-base-shadow)" />
 
-  <g transform="translate(256, 256) scale(1.12) translate(-256, -256)">
+  <g transform="translate(256, 256) scale(0.78) translate(-256, -256)">
     <!-- Frosted Glass Inner Terminal Frame -->
     <rect x="84" y="84" width="344" height="344" rx="68" ry="68" fill="url(#tm-card)" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2" />
 

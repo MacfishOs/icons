@@ -7,38 +7,66 @@
     <filter id="as-elem-shadow" x="-20%" y="-20%" width="140%" height="145%">
       <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#040B14" flood-opacity="0.35" />
     </filter>
+
     <linearGradient id="as-bg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#1E2B3C" /><stop offset="100%" stop-color="#0F1722" />
+      <stop offset="0%" stop-color="#1E2B3C" />
+      <stop offset="100%" stop-color="#0F1722" />
     </linearGradient>
+
     <linearGradient id="as-border" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#476285" stop-opacity="0.8" /><stop offset="100%" stop-color="#0F1722" stop-opacity="0.9" />
+      <stop offset="0%" stop-color="#476285" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0F1722" stop-opacity="0.9" />
     </linearGradient>
+
     <linearGradient id="as-green" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4DF78B" /><stop offset="55%" stop-color="#3DDC84" /><stop offset="100%" stop-color="#159952" />
+      <stop offset="0%" stop-color="#4DF78B" />
+      <stop offset="55%" stop-color="#3DDC84" />
+      <stop offset="100%" stop-color="#159952" />
     </linearGradient>
+
     <linearGradient id="as-compass-left" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" /><stop offset="100%" stop-color="#CBD6E6" />
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#CBD6E6" />
     </linearGradient>
+
     <linearGradient id="as-compass-right" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#99ECFF" stop-opacity="0.9" /><stop offset="100%" stop-color="#2B8CFF" stop-opacity="0.9" />
+      <stop offset="0%" stop-color="#99ECFF" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#2B8CFF" stop-opacity="0.9" />
     </linearGradient>
   </defs>
+
+  <!-- macOS Squircle Base -->
   <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="url(#as-bg)" stroke="url(#as-border)" stroke-width="3" filter="url(#as-base-shadow)" />
-  <g transform="translate(256, 256) scale(1.12) translate(-256, -256)">
-    <circle cx="256" cy="264" r="156" fill="none" stroke="#4DF78B" stroke-opacity="0.14" stroke-width="2" stroke-dasharray="10 8" />
-    <g filter="url(#as-elem-shadow)">
-      <line x1="196" y1="154" x2="174" y2="118" stroke="url(#as-green)" stroke-width="14" stroke-linecap="round" />
-      <line x1="316" y1="154" x2="338" y2="118" stroke="url(#as-green)" stroke-width="14" stroke-linecap="round" />
-      <path d="M 152 232 A 104 104 0 0 1 360 232 Z" fill="url(#as-green)" stroke="#B5FFD4" stroke-opacity="0.6" stroke-width="2" />
-      <circle cx="212" cy="186" r="10" fill="#FFFFFF" opacity="0.95" />
-      <circle cx="300" cy="186" r="10" fill="#FFFFFF" opacity="0.95" />
-    </g>
-    <g filter="url(#as-elem-shadow)">
-      <path d="M 164 334 A 118 118 0 0 0 348 334" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="16" stroke-linecap="round" />
-      <rect x="240" y="198" width="32" height="206" rx="16" transform="rotate(-24 256 218)" fill="url(#as-compass-right)" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5" />
-      <rect x="240" y="198" width="32" height="206" rx="16" transform="rotate(24 256 218)" fill="url(#as-compass-left)" stroke="#FFFFFF" stroke-width="1.5" />
-      <circle cx="256" cy="218" r="28" fill="url(#as-compass-left)" stroke="#FFFFFF" stroke-width="2" />
-      <circle cx="256" cy="218" r="12" fill="#1E2B3C" />
-    </g>
+
+  <!-- Calibrated Glyph Group (Scale 0.78) -->
+  <g transform="translate(256, 256) scale(0.78) translate(-256, -256)">
+
+  <!-- Subtle Blueprint Grid Ring -->
+  <circle cx="256" cy="264" r="156" fill="none" stroke="#4DF78B" stroke-opacity="0.14" stroke-width="2" stroke-dasharray="10 8" />
+
+  <!-- Android Bot Top Dome & Antennae -->
+  <g filter="url(#as-elem-shadow)">
+    <line x1="196" y1="154" x2="174" y2="118" stroke="url(#as-green)" stroke-width="14" stroke-linecap="round" />
+    <line x1="316" y1="154" x2="338" y2="118" stroke="url(#as-green)" stroke-width="14" stroke-linecap="round" />
+    <path d="M 152 232 A 104 104 0 0 1 360 232 Z" fill="url(#as-green)" stroke="#B5FFD4" stroke-opacity="0.6" stroke-width="2" />
+    <circle cx="212" cy="186" r="10" fill="#FFFFFF" opacity="0.95" />
+    <circle cx="300" cy="186" r="10" fill="#FFFFFF" opacity="0.95" />
+  </g>
+
+  <!-- HarmonyOS Frosted Drafting Compass -->
+  <g filter="url(#as-elem-shadow)">
+    <!-- Compass Measuring Arc -->
+    <path d="M 164 334 A 118 118 0 0 0 348 334" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="16" stroke-linecap="round" />
+
+    <!-- Right Compass Leg (Translucent Cyan-Blue Acrylic) -->
+    <rect x="240" y="198" width="32" height="206" rx="16" transform="rotate(-24 256 218)" fill="url(#as-compass-right)" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5" />
+
+    <!-- Left Compass Leg (Ceramic White-Silver) -->
+    <rect x="240" y="198" width="32" height="206" rx="16" transform="rotate(24 256 218)" fill="url(#as-compass-left)" stroke="#FFFFFF" stroke-width="1.5" />
+
+    <!-- Center Pivot Ring -->
+    <circle cx="256" cy="218" r="28" fill="url(#as-compass-left)" stroke="#FFFFFF" stroke-width="2" />
+    <circle cx="256" cy="218" r="12" fill="#1E2B3C" />
+  </g>
   </g>
 </svg>
