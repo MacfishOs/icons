@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <filter id="sm-base-shadow" x="-15%" y="-10%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#031214" flood-opacity="0.30" />
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#031214" flood-opacity="0.15" />
+    </filter>
+    <filter id="sm-pulse-glow" x="-20%" y="-25%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#00FFAA" flood-opacity="0.48" />
+    </filter>
+
+    <linearGradient id="sm-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#192B30" />
+      <stop offset="55%" stop-color="#101B1F" />
+      <stop offset="100%" stop-color="#091012" />
+    </linearGradient>
+
+    <linearGradient id="sm-border" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3AE6B8" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#0B1417" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="sm-area" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00FFAA" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#00B8FF" stop-opacity="0.0" />
+    </linearGradient>
+
+    <linearGradient id="sm-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00C8FF" />
+      <stop offset="50%" stop-color="#00FFAA" />
+      <stop offset="100%" stop-color="#70FF7A" />
+    </linearGradient>
+
+    <clipPath id="sm-screen-clip">
+      <rect x="84" y="84" width="344" height="344" rx="64" />
+    </clipPath>
+  </defs>
+
+  <!-- macOS Squircle Base -->
+  <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="url(#sm-bg)" stroke="url(#sm-border)" stroke-width="3" filter="url(#sm-base-shadow)" />
+
+  <!-- Inner Artwork Scaled & Centered to Fill Dock Slot -->
+  <g transform="translate(256, 256) scale(1.132075) translate(-256, -256)">
+    <g clip-path="url(#sm-screen-clip)">
+      <rect x="84" y="84" width="344" height="344" rx="64" fill="#0B1316" opacity="0.6" />
+      <g stroke="#00FFAA" stroke-opacity="0.10" stroke-width="1.5">
+        <line x1="84" y1="170" x2="428" y2="170" />
+        <line x1="84" y1="256" x2="428" y2="256" />
+        <line x1="84" y1="342" x2="428" y2="342" />
+        <line x1="170" y1="84" x2="170" y2="428" />
+        <line x1="256" y1="84" x2="256" y2="428" />
+        <line x1="342" y1="84" x2="342" y2="428" />
+      </g>
+      <path d="M 84 286 L 168 286 L 204 218 L 242 346 L 288 152 L 326 298 L 354 256 L 428 256 L 428 428 L 84 428 Z" fill="url(#sm-area)" />
+      <path d="M 84 286 L 168 286 L 204 218 L 242 346 L 288 152 L 326 298 L 354 256 L 404 256" fill="none" stroke="url(#sm-line)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" filter="url(#sm-pulse-glow)" />
+      <circle cx="404" cy="256" r="12" fill="#FFFFFF" filter="url(#sm-pulse-glow)" />
+    </g>
+    <rect x="84" y="84" width="344" height="344" rx="64" fill="none" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2" />
+  </g>
+</svg>

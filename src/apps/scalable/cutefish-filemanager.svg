@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Multi-stage ambient + key light drop shadows -->
+    <filter id="fl-shadow-base" x="-20%" y="-15%" width="140%" height="145%">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#06152D" flood-opacity="0.26" />
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#06152D" flood-opacity="0.12" />
+    </filter>
+
+    <filter id="fl-shadow-card" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#041938" flood-opacity="0.25" />
+    </filter>
+
+    <!-- Base Canvas Blue Silver Tile -->
+    <linearGradient id="fl-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F2F7FF" />
+      <stop offset="55%" stop-color="#E3EEFF" />
+      <stop offset="100%" stop-color="#C8DCFA" />
+    </linearGradient>
+
+    <linearGradient id="fl-border" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#A6C2EB" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="fl-highlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Blue Folder Elements -->
+    <linearGradient id="folder-back" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066FF" />
+      <stop offset="100%" stop-color="#0040B8" />
+    </linearGradient>
+
+    <linearGradient id="doc-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFCF4B" />
+      <stop offset="100%" stop-color="#FF9900" />
+    </linearGradient>
+
+    <linearGradient id="doc-white" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E1ECFA" />
+    </linearGradient>
+
+    <linearGradient id="folder-front-glass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#66C2FF" stop-opacity="0.85" />
+      <stop offset="45%" stop-color="#2B8CFF" stop-opacity="0.90" />
+      <stop offset="100%" stop-color="#005CE6" stop-opacity="0.96" />
+    </linearGradient>
+
+    <linearGradient id="pocket-rim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Solid Light Blue Squircle Base -->
+  <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="url(#fl-bg)" stroke="url(#fl-border)" stroke-width="3" filter="url(#fl-shadow-base)" />
+
+  <!-- Specular Reflection Overlay -->
+  <rect x="18" y="18" width="476" height="230" rx="108" ry="108" fill="url(#fl-highlight)" opacity="0.6" />
+
+  <!-- 3D Layered Folder Group -->
+  <g filter="url(#fl-shadow-card)">
+    <!-- Rear Folder Back Shell -->
+    <path d="M 102 152 C 102 132, 118 116, 138 116 H 208 C 224 116, 234 124, 244 136 L 254 148 C 260 155, 270 158, 280 158 H 374 C 394 158, 410 174, 410 194 V 356 C 410 378, 392 396, 370 396 H 142 C 120 396, 102 378, 102 356 Z" fill="url(#folder-back)" />
+
+    <!-- Tucked Amber Preview Document -->
+    <rect x="134" y="156" width="150" height="140" rx="22" transform="rotate(-6 209 226)" fill="url(#doc-amber)" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5" />
+
+    <!-- Tucked Main White Document -->
+    <g transform="rotate(5 305 230)">
+      <rect x="220" y="154" width="160" height="148" rx="22" fill="url(#doc-white)" stroke="#FFFFFF" stroke-width="2" filter="url(#fl-shadow-card)" />
+      <rect x="246" y="182" width="64" height="10" rx="5" fill="#2B8CFF" opacity="0.45" />
+      <rect x="246" y="204" width="104" height="10" rx="5" fill="#8CA8CC" opacity="0.35" />
+    </g>
+
+    <!-- Front Frosted Glass Pocket -->
+    <rect x="102" y="212" width="308" height="184" rx="42" fill="url(#folder-front-glass)" stroke="url(#pocket-rim)" stroke-width="2.5" />
+
+    <!-- Pocket Gloss Highlight Line -->
+    <rect x="220" y="242" width="72" height="10" rx="5" fill="#FFFFFF" opacity="0.55" />
+  </g>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Multi-stage ambient + key light drop shadows -->
+    <filter id="cl-shadow-base" x="-20%" y="-15%" width="140%" height="145%">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#05070D" flood-opacity="0.32" />
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#05070D" flood-opacity="0.16" />
+    </filter>
+
+    <filter id="cl-shadow-tile" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+
+    <!-- Charcoal Matte Base Gradients -->
+    <linearGradient id="cl-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A404D" />
+      <stop offset="50%" stop-color="#242832" />
+      <stop offset="100%" stop-color="#14171E" />
+    </linearGradient>
+
+    <linearGradient id="cl-border" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#737E94" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#12141A" stop-opacity="0.95" />
+    </linearGradient>
+
+    <linearGradient id="cl-highlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.28" />
+      <stop offset="40%" stop-color="#FFFFFF" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Frosted Glass Keypad Tiles -->
+    <linearGradient id="cl-tile-glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5E677B" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#363C4A" stop-opacity="0.6" />
+    </linearGradient>
+
+    <!-- Vibrant Orange Equal Button -->
+    <linearGradient id="cl-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9D14" />
+      <stop offset="50%" stop-color="#FF7A00" />
+      <stop offset="100%" stop-color="#E04F00" />
+    </linearGradient>
+  </defs>
+
+  <!-- Charcoal Squircle Base Tile -->
+  <rect x="16" y="16" width="480" height="480" rx="110" ry="110" fill="url(#cl-bg)" stroke="url(#cl-border)" stroke-width="3" filter="url(#cl-shadow-base)" />
+
+  <!-- Top Specular Reflection Overlay -->
+  <rect x="18" y="18" width="476" height="230" rx="108" ry="108" fill="url(#cl-highlight)" opacity="0.7" />
+
+  <!-- 4 Grid Keypad Buttons -->
+  <g filter="url(#cl-shadow-tile)">
+    <!-- 1. Top-Left: Plus (+) -->
+    <rect x="94" y="94" width="148" height="148" rx="44" fill="url(#cl-tile-glass)" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2" />
+    <path d="M 168 136 V 200 M 136 168 H 200" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" />
+
+    <!-- 2. Top-Right: Minus (−) -->
+    <rect x="270" y="94" width="148" height="148" rx="44" fill="url(#cl-tile-glass)" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2" />
+    <path d="M 312 168 H 376" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" />
+
+    <!-- 3. Bottom-Left: Multiply (×) -->
+    <rect x="94" y="270" width="148" height="148" rx="44" fill="url(#cl-tile-glass)" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2" />
+    <path d="M 144 320 L 192 368 M 192 320 L 144 368" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" />
+
+    <!-- 4. Bottom-Right: Equals (=) -->
+    <rect x="270" y="270" width="148" height="148" rx="44" fill="url(#cl-amber)" stroke="#FFE0B2" stroke-opacity="0.7" stroke-width="2.5" />
+    <path d="M 312 328 H 376 M 312 360 H 376" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" />
+  </g>
+</svg>
